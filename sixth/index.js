@@ -4,7 +4,7 @@ const splitValues = splitGroups.map(group => group.split(/\n/g))
 
 let totalValue = 0
 let totalAgreedValue = 0
-splitValues.map(group => {
+splitValues.forEach(group => {
   const groupSetValues = new Set()
   const groupObjectValues = {}
   group.forEach((member, idx) => Array.from(member).forEach(item => {
